@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(./fonts/stylesheet.css);
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
+
+}
+@media (min-width: 480px) { 
+  .txt {
+    font-family: 'Capsule';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+  }
+  .light {
+    font-family: 'Capsule';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    background: radial-gradient(92.76% 281.81% at 7.24% 36.21%, #CD3333 0%, #28869B 52.19%, #5E20E2 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .neon {
+    left: -110px;
+    top: 300px;
+  }
+  .neon2 {
+    left: 1380px;
+    top: 165px;
+  }
+}
+
+.txt {
+  font-family: 'Capsule';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+}
+.brdr {
+  border: 1px solid #DBDBDB;
+}
+.light {
+  font-family: 'Capsule';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  background: radial-gradient(92.76% 281.81% at 7.24% 36.21%, #CD3333 0%, #28869B 52.19%, #5E20E2 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* color: #fff; */
+
+  /* text-fill-color: transparent; */
+}
+.brdr2 {
+  border: 1px solid #DBDBDB;
+
+}
+.neon {
+  display: none;
+  
+}
+.neon2 {
+  display: none;
+  
+}
+.up:hover {
+  transform: translateY(-2px);
+
+}
+
+.btnhover:hover {
+  background: #2e2e2e;
+  border: 1px solid transparent;
+}
+
+.card:hover .cardbtn{
+  opacity: 1;
+  transform: scale(1);
+}
+.cardbtn{
+  font-family: 'Yekan Bakh';
+  position: absolute;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.cardimg:hover {
+  opacity: 0.4;
+  transform: scale(1.01);
+
+}
+
+/* .card:hover .cardbtn {
+  opacity: 1;
+  display: none;
+  background: rebeccapurple;
+
+} */
+/* .card:hover .cardbtn {
+  opacity: 1;
+}  */
+
